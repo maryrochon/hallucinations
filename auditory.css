@@ -1,0 +1,75 @@
+@font-face {
+    font-family: Blood;
+    src: url(fonts/DrawingBlood-XrVG.ttf);
+}
+body{
+    background: black;
+    color: white;
+    overflow-x: hidden;
+}
+#page{
+    width: 100%;
+    text-align: center;
+    overflow-x: auto;
+}
+h1{
+    color: rgb(192, 50, 50);
+    font-family: "Blood";
+    font-size: 6vw;
+    text-align: center;
+}
+table{
+    position: relative;
+    margin: auto;
+}
+#heartbeat:link, #heartbeat:visited{
+    font-family: "Blood";
+    color: rgb(192, 50, 50);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+#heartbeat:hover, #heartbeat:active{
+    font-family: "Blood";
+    color: rgb(250, 0, 0);
+    text-align: center;
+    font-size: 2vw;
+}
+
+/* https://stackoverflow.com/questions/9738876/inserting-a-blank-table-row-with-a-smaller-height */
+.blank_row{
+    height: 40vh;
+    width: auto;
+}
+
+
+
+#fog{
+    width: 110%;
+    height: auto;
+    position: absolute;
+    top: -20vh;
+    left: 0px;
+    min-height: 100%;
+    z-index: -1;
+}
+#fog1{
+    width: 110%;
+    height: auto;
+    position: absolute;
+    top: 125vh;
+    left: 0px;
+    min-height: 100%;
+    z-index: -1;
+    transform: rotate(180deg);
+}
+@keyframes foggy{
+    0%{left:-10%;}
+    25%{left: -7.5%;}
+    50%{left: -5%;}
+    75%{left: -2.5%;}
+    100%{left: -1%;}
+}
+.foggy{
+    animation: foggy 5s ease-in-out infinite;
+}
