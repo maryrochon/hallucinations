@@ -1,0 +1,378 @@
+@font-face {
+    font-family: Blood;
+    src: url(fonts/DrawingBlood-XrVG.ttf);
+}
+body{
+    background: black;
+    overflow: hidden;
+    color: white;
+}
+
+#titles{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 20vh;
+
+    /* text-decoration: none; */
+}
+/* https://stackoverflow.com/questions/20304472/how-to-make-the-font-size-smaller-when-i-resize-the-browser */
+#menu a:link, #menu a:visited{
+    color: rgb(192, 50, 50);
+    text-decoration: none;
+    font-family: "Blood";
+    font-size: 8vw;
+}
+#menu a:hover, #menu a:active{
+    color: rgb(250, 0, 0);
+    text-decoration: none;
+    font-family: "Blood";
+    font-size: 10.5vw;
+}
+
+#fog{
+    width: 110%;
+    height: auto;
+    position: absolute;
+    top: -20vh;
+    left: 0px;
+    min-height: 100%;
+    z-index: -1;
+    /* transition: left 3s; */
+}
+@keyframes foggy{
+    0%{left:-10%;}
+    25%{left: -7.5%;}
+    50%{left: -5%;}
+    75%{left: -2.5%;}
+    100%{left: -1%;}
+}
+.foggy{
+    animation: foggy 5s ease-in-out infinite;
+}
+
+/* visional page */
+#vis{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+#visTitle{
+    color: rgb(192, 50, 50);
+    font-family: "Blood";
+    font-size: 6vw;
+}
+p{
+    font-size: 1.1vw;
+    font-size: max(1.1vw, 10px);
+    width: 80%;
+    height: auto;
+    position: relative;
+    text-align: justify;
+    left: 10%;
+    top: -4vh;
+}
+#source:link, #source:visited{
+    color: rgb(241, 220, 220);
+    font-size: 1.1vw;
+    width: 80%;
+    height: auto;
+    position: relative;
+    left: 10%;
+    top: -4vh;
+    text-decoration: none;
+}
+#source:hover, #source:active{
+    text-decoration: underline;
+    color: rgb(192, 50, 50);
+    font-style: italic;
+}
+#video1{
+    position: relative;
+    width: 25vw;
+    height: 14.06vw;
+    left: 10%;
+}
+#video2{
+    position: relative;
+    width: 25vw;
+    height: 14.06vw;
+    left: 39%;
+}
+
+#shadow{
+    position: absolute;
+    width: 10vw;
+    min-width: 50px;
+    height: auto;
+    top: -200px;
+    left: 0px;
+}
+@keyframes shade{
+    0%{top: -20vh;}
+    50%{top: 10vh;}
+    100%{top: -20vh;}
+}
+.shade{
+    animation: shade 5s ease-in-out infinite;
+}
+#shadows{
+    position: absolute;
+    width: 10vw;
+    height: auto;
+    top: -1000px;
+    left: 90%;
+}
+@keyframes shades{
+    0%{top: 110vh;}
+    50%{top: 75vh;}
+    100%{top: 110vh;}
+}
+.shades{
+    animation: shades 5s ease-in-out infinite;
+}
+
+/* tactiation */
+#tactTitle{
+    color: rgb(192, 50, 50);
+    font-family: "Blood";
+    font-size: 6vw;
+    text-align: center;
+}
+img{
+    width: 50px;
+    height: auto;
+}
+#bug1{
+    position: absolute;
+}
+#bug2{
+    position: relative;
+    top: -20vh;
+}
+#bug3{
+    position: absolute;
+}
+#bug4{
+    position: absolute;
+}
+#bug5{
+    position: relative;
+    top: -20vh;
+}
+#bug6{
+    position: relative;
+    top: -20vh;
+}
+#bug7{
+    position: absolute;
+}
+#bug8{
+    position: absolute;
+}
+#bug9{
+    position: relative;
+    top: -20vh;
+}
+#bug10{
+    position: relative;
+    top: -20vh;
+}
+#bug11{
+    position: relative;
+    top: -20vh;
+}
+#bug12{
+    position: relative;
+    top: -20vh;
+}
+#bug13{
+    position: relative;
+    top: -20vh;
+}
+#bug14{
+    position: absolute;
+}
+#bug15{
+    position: absolute;
+}
+#bug16{
+    position: absolute;
+}
+#bug17{
+    position: relative;
+    top: -20vh;
+}#bug18{
+    position: relative;
+    top: -20vh;
+}
+#bug19{
+    position: absolute;
+    width: 75px;
+    height: auto;
+}
+#bug20{
+    position: absolute;
+}
+#bug21{
+    position: relative;
+    top: -20vh;
+}
+#bug22{
+    position: relative;
+    top: -20vh;
+}
+#bug23{
+    position: relative;
+    top: -20vh;
+}
+#bug24{
+    position: relative;
+    top: -20vh;
+}
+#choosenOne{
+    position: relative;
+    top: -20vh;
+}
+@keyframes cockroach1{
+    0%{top: -10vh;
+        left: 90%;}
+    50%{top: 100vh;
+        left: 90%;}
+    100%{top: -10vh;
+        left: 90%;}
+}
+.cockroach1{
+    animation: cockroach1 8s ease-in-out infinite;
+}
+@keyframes cockroach2{
+    0%{top: -10vh;
+        left: 50%;}
+    50%{top: 100vh;
+        left: 50%;}
+    100%{top: -10vh;
+        left: 50%;}
+}
+.cockroach2{
+    animation: cockroach2 6s ease-in-out infinite;
+}
+@keyframes cockroach3{
+    0%{top: -10vh;
+        left: 80%;}
+    50%{top: 100vh;
+        left: 80%;}
+    100%{top: -10vh;
+        left: 80%;}
+}
+.cockroach3{
+    animation: cockroach3 8s ease-in-out infinite;
+}
+@keyframes cockroach4{
+    0%{top: -10vh;
+        left: 66%;}
+    50%{top: 100vh;
+        left: 66%;}
+    100%{top: -10vh;
+        left: 66%;}
+}
+.cockroach4{
+    animation: cockroach4 5s ease-in-out infinite;
+}
+@keyframes cockroach5{
+    0%{top: -10vh;
+        left: 15%;
+        width: 75px;
+        height: auto;}
+    50%{top: 100vh;
+        left: 15%;
+        width: 50px;
+        height: auto;}
+    100%{top: -10vh;
+        left: 15%;
+        width: 75px;
+        height: auto;}
+}
+.cockroach5{
+    animation: cockroach5 8s ease-in-out infinite;
+}
+@keyframes cockroach6{
+    0%{top: -10vh;
+        left: 20%;
+        width: 50px;
+        height: auto;}
+    50%{top: 100vh;
+        left: 20%;
+        width: 100px;
+        height: auto;}
+    100%{top: -10vh;
+        left: 20%;
+        width: 50px;
+        height: auto;}
+}
+.cockroach6{
+    animation: cockroach6 15s ease-in-out infinite;
+}
+@keyframes cockroach7{
+    0%{top: -10vh;
+        left: 30%;
+        width: 50px;
+        height: auto;}
+    50%{top: 100vh;
+        left: 30%;
+        width: 90px;
+        height: auto;}
+    100%{top: -10vh;
+        left: 30%;
+        width: 50px;
+        height: auto;}
+}
+.cockroach7{
+    animation: cockroach7 10s ease-in-out infinite;
+}
+@keyframes cockroach8{
+    0%{top: -10vh;
+        left: 5%;
+        width: 60px;
+        height: auto;}
+    50%{top: 100vh;
+        left: 0%}
+    100%{top: -10vh;
+        left: 5%;
+        width: 60px;
+        height: auto;}
+}
+.cockroach8{
+    animation: cockroach8 5s ease-in-out infinite;
+}
+@keyframes cockroach9{
+    0%{top: -10vh;
+        left: 40%;
+        width: 60px;
+        height: auto;}
+    50%{top: 100vh;
+        left: 40%}
+    100%{top: -10vh;
+        left: 40%;
+        width: 60px;
+        height: auto;}
+}
+.cockroach9{
+    animation: cockroach9 8s ease-in-out infinite;
+}
+@keyframes cockroach10{
+    0%{top: -10vh;
+        left: 10%;
+        width: 60px;
+        height: auto;}
+    50%{top: 100vh;
+        left: 10%}
+    100%{top: -10vh;
+        left: 10%;
+        width: 60px;
+        height: auto;}
+}
+.cockroach10{
+    animation: cockroach10 3s ease-in-out infinite;
+}
